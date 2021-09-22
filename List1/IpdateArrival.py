@@ -9,4 +9,4 @@ def update_arrrival(h, m, d):
         d=d-1;
     return(h, m)
 
-print(str(update_arrrival(10,45,20)))
+print(str(update_arrrival(12, 30, 60)))
