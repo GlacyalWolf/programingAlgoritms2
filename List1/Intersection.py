@@ -10,16 +10,7 @@ def intersection(a,b,c,d):
     else:
         conect.append(d)
 
-    return conect
-
-
-
-
-
-
-    
-        
-        
+    return conect       
 
         
 
