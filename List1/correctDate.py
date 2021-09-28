@@ -39,8 +39,47 @@ def correct_date(d,m,y):
     >>> correct_date(-20, 15, 2000)
     False
     '''
-    if
+    result=False;
+    if(m==1 and d<=31):
+        result=True;
+    
+    if(m==2):
+        if (leapyear(y) and  d<=29):
+            result=True;
+        if (not(leapyear(y)) and d<=28):
+            result=True;
+    
+    if(m==3 and d<=31):
+        result=True;
+    
+    if(m==4 and d<=30):
+        result=True;
 
+    if(m==5 and d<=31):
+        result=True;
+
+    if(m==6 and d<=30):
+        result=True;
+    
+    if(m==7 and d<=31):
+        result=True;
+    
+    if(m==8 and d<=31):
+        result=True;
+    
+    if(m==9 and d<=30):
+        result=True;
+    
+    if(m==10 and d<=31):
+        result=True;
+    
+    if(m==11 and d<=30):
+        result=True;
+    
+    if(m==12 and d<=31):
+        result=True;
+    
+    return result;
 
 
 if __name__ == "__main__":
