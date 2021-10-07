@@ -22,12 +22,15 @@ def delete_digits(string):
     
     
             
-    for i in descarte:
-        arr[i]="";
+    for i in reversed(descarte):
+        arr.pop(i);
+    
+    
     
     nuevo="".join(arr);
 
-    return nuevo
+    if(not(nuevo=="")):
+        return nuevo;   
 
 
             

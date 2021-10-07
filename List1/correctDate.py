@@ -43,11 +43,8 @@ def correct_date(d,m,y):
         return True;
     elif m in [4,6,9,11] and 1<=d<=30:
         return True;
-    elif m==2 :
-        if leapyear(y) and 1<=d<=29:
-            return True;
-        if not (leapyear(y)) and 1<=d<=28:
-            return True;
+    elif m==2 and 1<=d<=28 and leapyear(y) and 1<=d<=29:
+        return True;
     
     result=False;    
 
