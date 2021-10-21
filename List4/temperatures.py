@@ -4,6 +4,7 @@ def temperature():
     OK="it's ok";
     BOIL="water would freeze";
     FREEZ="water would boil";
+    
     temp=int(input());
 
     if(temp>30):
