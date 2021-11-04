@@ -1,49 +1,55 @@
-def middleDigit(numberDigits):
-    
-    WIN_ANNA="A";
-    WIN_BERNARD="B";
-    DRAW="=";
 
-    lengthOfDigits=(int(input()))*2;
-    stringNum=input();
-    listNumbers=stringNum.split(" ");
-    refAnt="";
-    cont=1;
 
-    for i in stringNum:
+WIN_ANNA="A";
+WIN_BERNARD="B";
+DRAW="=";
+
+
+
+def x():  
         
-        if(refAnt!=""):
-            if(i[len(i)//2+1]==refAnt[len(i)//2+1]):
-                cont+=cont;
-                continue;
+    repetitions=int(input())*2
+    num=input();
+    memoNum=num;
 
-            if(i[len(i)//2+1]!=refAnt[len(i)//2+1]):
-                if(cont%2==0):
-                    return WIN_BERNARD;
-                else:
-                    return WIN_ANNA;
+    for i in range(repetitions):
+        
+        if(len(num)%2!=0):
             
-            if(len(i)%2==0):
-                if(cont%2==0):
-                    return WIN_BERNARD;
-                else:
+
+            
+            
+            if(memoNum[(len(memoNum)//2)]!=num[(len(num)//2)]):
+                if(i%2!=0):
                     return WIN_ANNA;
+                else:
+                    return WIN_BERNARD;
 
 
-        
         else:
-            if(len(i)%2==0):
+            if (i==0):
                 return WIN_BERNARD;
+            elif(i%2!=0):
+                return WIN_ANNA;
+            else:
+                return WIN_BERNARD;
+
         
-
-
-        
-        refAnt=i;
-
+        memoNum=num;
+        num=input();
     return DRAW;
 
-    
+
+print(x())
+
+
+        
+
+
+
+
+
+
     
 
-     
-middleDigit(3);
+
