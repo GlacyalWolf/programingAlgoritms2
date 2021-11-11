@@ -14,17 +14,13 @@ def x():
 
     for i in range(repetitions):
         
-        if(len(num)%2!=0):
-            
-
-            
+        if(len(num)%2!=0):           
             
             if(memoNum[(len(memoNum)//2)]!=num[(len(num)//2)]):
                 if(i%2!=0):
                     return WIN_ANNA;
                 else:
                     return WIN_BERNARD;
-
 
         else:
             if (i==0):
@@ -33,7 +29,6 @@ def x():
                 return WIN_ANNA;
             else:
                 return WIN_BERNARD;
-
         
         memoNum=num;
         num=input();
