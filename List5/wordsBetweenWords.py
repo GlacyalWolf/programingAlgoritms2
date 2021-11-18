@@ -7,6 +7,5 @@ try:
     else:
         print("Error")
 
-
 except:
     print("Error")
