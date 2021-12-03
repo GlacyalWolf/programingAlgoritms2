@@ -1,0 +1,2 @@
+from easyinput import read
+
