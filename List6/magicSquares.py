@@ -1,8 +1,13 @@
+from re import sub
 from easyinput import read
+import sys
 
-square=[]
-squareSize=read(int)
-
-for i in range(squareSize):
-    square.append(read(int,amount=squareSize))
-    
+row, col = read(int, int)
+matrix = []
+submatrix = []
+for x in range(row):
+    for i in range(col):
+        submatrix.append(read(int))
+    matrix.append(submatrix)
+    submatrix = []
+ 
