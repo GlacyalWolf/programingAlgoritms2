@@ -1,4 +1,4 @@
-from easyinput import read
+from easyinput import *
 cont = 0
 listnum = []
 
