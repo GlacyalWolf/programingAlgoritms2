@@ -1,3 +1,2 @@
-lista1=[1,3]
-lista2=[4,5]
-print(lista1+lista2)
+x:set.add([1,1,1])
+print(x)
