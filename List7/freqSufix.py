@@ -9,8 +9,10 @@ while word is not None:
     if len(word)>2:
         if(suf in suflist and word not in suflist[suf]):
             suflist[suf]+=[word]
-        else:
+        elif(suf not in suflist):
             suflist[suf]=[word]
+        
+            
     word=read(str)
 
 
