@@ -7,7 +7,7 @@ while word is not None:
     suf=word[-3:]
 
     if len(word)>2:
-        if(suf in suflist):
+        if(suf in suflist and word not in suflist[suf]):
             suflist[suf]+=[word]
         else:
             suflist[suf]=[word]
