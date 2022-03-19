@@ -1,9 +1,8 @@
-from easyinput import *
+from audioop import reverse
 
-x=read(str)
 
-while x is not None:
-    print(x)
-    x=read
+l=[1,2,3,4]
+print(sorted(l,reverse=True))
+
 
 
